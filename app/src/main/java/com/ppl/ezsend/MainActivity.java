@@ -15,31 +15,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MyImageButton = (ImageButton) findViewById(R.id.My_Image_Button);
+        MyImageButton = (ImageButton) findViewById(R.id.user);
         MyImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View V) {
 
-                Intent intentLoadNewActivity = new Intent(MainActivity.this, aboutus.class);
+                Intent intentLoadNewActivity = new Intent(MainActivity.this, kirim.class);
 
                 startActivity(intentLoadNewActivity);
             }
 
         });
 
-        MyImageButton = (ImageButton) findViewById(R.id.imageButton5);
-        MyImageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View V) {
-
-                Intent intentLoadNewActivity = new Intent(MainActivity.this,cekharga.class);
-
-                startActivity(intentLoadNewActivity);
-            }
-
-        });
-
-        MyImageButton = (ImageButton) findViewById(R.id.imageButton6);
+        MyImageButton = (ImageButton) findViewById(R.id.job);
         MyImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View V) {
@@ -51,7 +39,29 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        MyImageButton = (ImageButton) findViewById(R.id.imageButton7);
+        MyImageButton = (ImageButton) findViewById(R.id.notif);
+        MyImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View V) {
+
+                Intent intentLoadNewActivity = new Intent(MainActivity.this,cekharga.class);
+
+                startActivity(intentLoadNewActivity);
+            }
+
+        });MyImageButton = (ImageButton) findViewById(R.id.mail);
+        MyImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View V) {
+
+                Intent intentLoadNewActivity = new Intent(MainActivity.this, droppoint.class);
+
+                startActivity(intentLoadNewActivity);
+            }
+
+        });
+
+        MyImageButton = (ImageButton) findViewById(R.id.rate);
         MyImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View V) {
@@ -63,17 +73,19 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        MyImageButton = (ImageButton) findViewById(R.id.imageButton8);
+        MyImageButton = (ImageButton) findViewById(R.id.rev);
         MyImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View V) {
 
-                Intent intentLoadNewActivity = new Intent(MainActivity.this, droppoint.class);
+                Intent intentLoadNewActivity = new Intent(MainActivity.this, aboutus.class);
 
                 startActivity(intentLoadNewActivity);
             }
 
         });
+
+
     }
 
 }
