@@ -1,0 +1,5 @@
+git init
+git add *
+git remote https://github.com/awanlinux/awanlinux.git
+git pull origin master
+git push -u origin master
