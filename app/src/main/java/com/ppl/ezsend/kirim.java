@@ -9,5 +9,6 @@ public class kirim extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kirim);
+        this.setTitle( "Kirim");
     }
 }

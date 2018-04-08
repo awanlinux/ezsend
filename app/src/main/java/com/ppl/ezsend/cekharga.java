@@ -9,6 +9,7 @@ public class cekharga extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cekharga);
+        this.setTitle( "Cek Harga");
     }
 
 
