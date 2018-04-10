@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ppl.ezsend.contactus">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="205dp"
+        android:layout_height="159dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/kontakkami"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/satu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Cara Mengirim Paket?" />
+
+    <Button
+        android:id="@+id/dua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/satu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Paket Saya Sudah Sampai Mana?"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+    <Button
+        android:id="@+id/tiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dua"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Dimana DropPoint Terdekat?"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="332dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:text="BANTUAN"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+
+        android:layout_below="@+id/tiga"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Tidak menemukan solusi untuk masalah anda?\n anda dapat menghubungi call center kami."
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <Button
+        android:id="@+id/hubungikami"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:text="Hubungi Kami"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="447dp" />
+</RelativeLayout>
