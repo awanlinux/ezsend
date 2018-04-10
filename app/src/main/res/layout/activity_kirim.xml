@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kirim">
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_pressed"
+            android:id="@+id/user"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/kirimpaket"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#848080"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Kirim Paket"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="18dp"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:inputType="textPersonName"
+                    android:text="Nama Pengirim :" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:inputType="textPersonName"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="18dp"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:inputType="textPersonName"
+                    android:text="Alamat Pengirim :" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:inputType="textPersonName"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="18dp"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:inputType="textPersonName"
+                    android:text="Alamat Tujuan :" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:inputType="textPersonName"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="18dp"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:inputType="textPersonName"
+                    android:text="No.Telp/HP :" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:inputType="textPersonName"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="18dp"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:inputType="textPersonName"
+                    android:text="Jenis Paket :" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#2ecc71"
+                    android:entries="@array/android_dropdown_arrays"
+                    android:padding="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="18dp"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="KIRIM"
+                    android:textStyle="bold"
+                    android:background="@color/blue1"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ezSend</string>
+    <string name="title_activity_droppoint2">Map</string>
+    <string-array name="android_dropdown_arrays">
+        <item>Pilih Item</item>
+        <item>YES</item>
+        <item>OK</item>
+        <item>KILAT</item>
+        <item>EXPRESS</item>
+    </string-array>
+</resources>
