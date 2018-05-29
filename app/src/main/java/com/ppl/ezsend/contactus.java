@@ -19,36 +19,36 @@ public class contactus extends AppCompatActivity {
         this.setTitle("Contact Us");
 
 
-        btn1 = (Button)findViewById(R.id.satu);
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentLoadNewActivity = new Intent(contactus.this, CkirimPaket.class);
-
-                startActivity(intentLoadNewActivity);
-            }
-        });
-
-        btn2 = (Button) findViewById(R.id.dua);
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentLoadNewActivity = new Intent(contactus.this, PsampaiMana.class);
-
-                startActivity(intentLoadNewActivity);
-            }
-        });
-
-        btn3 = (Button) findViewById(R.id .tiga);
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentLoadNewActivity = new Intent(contactus.this, droppoinTerdekat.class);
-
-                startActivity(intentLoadNewActivity);
-            }
-        });
-
+//        btn1 = (Button)findViewById(R.id.satu);
+//        btn1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intentLoadNewActivity = new Intent(contactus.this, CkirimPaket.class);
+//
+//                startActivity(intentLoadNewActivity);
+//            }
+//        });
+//
+//        btn2 = (Button) findViewById(R.id.dua);
+//        btn2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intentLoadNewActivity = new Intent(contactus.this, PsampaiMana.class);
+//
+//                startActivity(intentLoadNewActivity);
+//            }
+//        });
+//
+//        btn3 = (Button) findViewById(R.id .tiga);
+//        btn3.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intentLoadNewActivity = new Intent(contactus.this, droppoinTerdekat.class);
+//
+//                startActivity(intentLoadNewActivity);
+//            }
+//        });
+//
         btn4 = (Button) findViewById(R.id .hubungikami);
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
