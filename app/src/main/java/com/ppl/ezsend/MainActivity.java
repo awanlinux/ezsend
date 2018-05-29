@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View V) {
 
-                Intent intentLoadNewActivity = new Intent(MainActivity.this, droppoint.class);
+                Intent intentLoadNewActivity = new Intent(MainActivity.this, droppoint2.class);
 
                 startActivity(intentLoadNewActivity);
             }
