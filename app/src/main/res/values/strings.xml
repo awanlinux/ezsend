@@ -17,6 +17,7 @@
     </string-array>
     <string-array name="android_cekharga">
         <item>Pilih Provinsi</item>
+        <item>DKI Jakarta</item>
         <item>Jawa Tengah</item>
         <item>Jawa Barat</item>
         <item>Sumatera</item>
@@ -32,6 +33,12 @@
     <string-array name="android_kota">
 
         <item>Pilih Kota</item>
+        <item>Jakarta Timur</item>
+        <item>Jakarta Selatan</item>
+        <item>Jakarta Barat</item>
+        <item>Jakarta Pusat</item>
+        <item>Jakarta Utara</item>
+
 
     </string-array>
 

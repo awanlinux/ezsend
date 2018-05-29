@@ -247,13 +247,15 @@
                 android:orientation="vertical">
 
                 <Button
+                    android:id="@+id/cekharga"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Cek Harga"
-                    android:textStyle="bold"
                     android:background="@color/blue1"
-                    />
+                    android:text="Cek Harga"
+                    android:onClick="displayToastMsg"
+                    android:textStyle="bold"
+                    tools:ignore="OnClick" />
             </LinearLayout>
         </LinearLayout>
 

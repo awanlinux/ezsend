@@ -2,6 +2,9 @@ package com.ppl.ezsend;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import java.io.IOException;
 
@@ -60,6 +63,21 @@ public class cekharga extends AppCompatActivity {
                 .build();
 
         Response response = client.newCall(request).execute();
+    }
+
+
+
+    public void toastMsg(String msg) {
+
+        Toast toast = Toast.makeText(this, msg, Toast.LENGTH_LONG);
+        toast.show();
+
+    }
+
+    public void displayToastMsg(View v) {
+
+        toastMsg(" Kurir : JNE, Kota : Jakarta Utara, Berat : 1 Kilo, Harga Rp 20000");
+
     }
 
 
