@@ -8,7 +8,7 @@
     <string name="tidak_menemukan_solusi_untuk_masalah_anda_n_anda_dapat_menghubungi_call_center_kami">Tidak menemukan solusi untuk masalah anda?  anda dapat menghubungi call center kami.</string>
     <string name="hubungi_kami">Hubungi Kami</string>
     <string name="todo">TODO</string>
-    <string-array name="android_jne">
+    <string-array name="android_dropdown_arrays">
         <item>Pilih Item</item>
         <item>YES</item>
         <item>OK</item>
