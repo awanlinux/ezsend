@@ -1,11 +1,32 @@
 <resources>
     <string name="app_name">ezSend</string>
     <string name="title_activity_droppoint2">Map</string>
+    <string name="cara_mengirim_paket">Cara Mengirim Paket?</string>
+    <string name="paket_saya_sudah_sampai_mana">Paket Saya Sudah Sampai Mana?</string>
+    <string name="dimana_droppoint_terdekat">Dimana DropPoint Terdekat?</string>
+    <string name="bantuan">BANTUAN</string>
+    <string name="tidak_menemukan_solusi_untuk_masalah_anda_n_anda_dapat_menghubungi_call_center_kami">Tidak menemukan solusi untuk masalah anda?  anda dapat menghubungi call center kami.</string>
+    <string name="hubungi_kami">Hubungi Kami</string>
+    <string name="todo">TODO</string>
     <string-array name="android_dropdown_arrays">
         <item>Pilih Item</item>
         <item>YES</item>
         <item>OK</item>
         <item>KILAT</item>
         <item>EXPRESS</item>
+    </string-array>
+    <string-array name="android_cekharga">
+        <item>Pilih Provinsi</item>
+        <item>Jawa Tengah</item>
+        <item>Jawa Barat</item>
+        <item>Sumatera</item>
+        <item>Kalimantan</item>
+    </string-array>
+    <string-array name="android_kurir">
+        <item>Pilih Kurir</item>
+        <item>JNE</item>
+        <item>TIKI</item>
+        <item>JNE</item>
+        <item>Pos</item>
     </string-array>
 </resources>

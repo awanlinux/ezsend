@@ -15,7 +15,8 @@
         android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/kontakkami"
         tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="0dp"
+        android:contentDescription="@string/todo" />
 
     <Button
         android:id="@+id/satu"
@@ -24,7 +25,7 @@
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="17dp"
-        android:text="Cara Mengirim Paket?" />
+        android:text="@string/cara_mengirim_paket" />
 
     <Button
         android:id="@+id/dua"
@@ -33,7 +34,7 @@
         android:layout_below="@+id/satu"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="13dp"
-        android:text="Paket Saya Sudah Sampai Mana?"
+        android:text="@string/paket_saya_sudah_sampai_mana"
         tools:layout_editor_absoluteX="60dp"
         tools:layout_editor_absoluteY="271dp" />
 
@@ -44,7 +45,7 @@
         android:layout_below="@+id/dua"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:text="Dimana DropPoint Terdekat?"
+        android:text="@string/dimana_droppoint_terdekat"
         tools:layout_editor_absoluteX="73dp"
         tools:layout_editor_absoluteY="332dp" />
 
@@ -54,20 +55,20 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
-        android:text="BANTUAN"
+        android:text="@string/bantuan"
         android:textSize="18sp"
         tools:layout_editor_absoluteX="151dp"
         tools:layout_editor_absoluteY="159dp" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="269dp"
         android:layout_height="39dp"
 
         android:layout_below="@+id/tiga"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="Tidak menemukan solusi untuk masalah anda?\n anda dapat menghubungi call center kami."
+        android:text="@string/tidak_menemukan_solusi_untuk_masalah_anda_n_anda_dapat_menghubungi_call_center_kami"
         android:textSize="14sp"
         tools:layout_editor_absoluteX="48dp"
         tools:layout_editor_absoluteY="392dp" />
@@ -79,7 +80,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="13dp"
-        android:text="Hubungi Kami"
+        android:text="@string/hubungi_kami"
         tools:layout_editor_absoluteX="131dp"
         tools:layout_editor_absoluteY="447dp" />
 </RelativeLayout>
