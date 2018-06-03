@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ppl.ezsend">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -18,13 +21,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
-        <activity android:name=".cekharga" />
-        <activity android:name=".aboutus" />
-        <activity android:name=".cekresi" />
-        <activity android:name=".contactus" />
-        <activity android:name=".droppoint" />
-        <activity android:name=".SplashActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cekharga"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".aboutus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cekresi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".contactus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -40,17 +54,26 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/. 
         -->
+
+        <activity android:name=".CkirimPaket" />
+        <activity
+            android:name=".hubungi_kami"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBLCnfQHKJp2fbtCBAtJbypHC1KO6k1JGE " />
+            android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".droppoint2"
-            android:label="@string/title_activity_droppoint2" />
-        <activity android:name=".CkirimPaket" />
-        <activity android:name=".PsampaiMana" />
-        <activity android:name=".droppoinTerdekat" />
-        <activity android:name=".hubungi_kami"></activity>
+            android:name=".drop"
+            android:label="@string/title_activity_drop"></activity>
     </application>
 
 </manifest>

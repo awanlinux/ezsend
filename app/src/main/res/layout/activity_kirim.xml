@@ -1,9 +1,238 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".kirim">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginHorizontal="25dp">
 
-</android.support.constraint.ConstraintLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="3"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/button_pressed"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/kirimpaket"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#848080"
+                android:layout_gravity="center_horizontal"
+                android:text="Kirim Paket"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengirim"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    />
+                <EditText
+                    android:id="@+id/edit1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:inputType="textPersonName"
+                    android:text="" />
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"
+                    />
+                <EditText
+                    android:id="@+id/edit2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:inputType="textPersonName"
+                    android:text="" />
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Telp"
+                    />
+                <EditText
+                    android:id="@+id/edit3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:inputType="textPersonName"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"            >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penerima"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    />
+                <EditText
+                    android:id="@+id/edit4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:inputType="textPersonName"
+                    android:text="" />
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"
+                    />
+
+                <EditText
+                    android:id="@+id/edit5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:inputType="textPersonName"
+                    android:text="" />
+
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Telp"
+                    />
+
+                <EditText
+                    android:id="@+id/edit6"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:inputType="textPersonName"
+                    android:text="" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:inputType="textPersonName"
+                    android:text="Jenis Paket :"
+                    android:textSize="15dp" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#2ecc71"
+                    android:entries="@array/android_dropdown_arrays"
+
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="right">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KIRIM" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

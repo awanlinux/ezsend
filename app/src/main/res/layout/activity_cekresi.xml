@@ -1,9 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ppl.ezsend.droppoint">
+    tools:context=".kirim">
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="25dp">
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_pressed"
+            android:id="@+id/user"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/trackpaket"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#848080"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Track Paket"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:textAlignment="center"
+                    android:inputType="textPersonName"
+                    android:hint="Nomor Resi"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="30dp"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:background="@color/blue1"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="TRACK" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:textSize="14dp"
+                    android:background="#FF1493"
+                    android:textAlignment="center"
+                    android:inputType="textPersonName"
+                    android:text="No" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:textSize="14dp"
+                    android:background="#FF6347"
+                    android:textAlignment="center"
+                    android:inputType="textPersonName"
+                    android:text="Lokasi" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:textSize="14dp"
+                    android:background="#00CED1"
+                    android:textAlignment="center"
+                    android:inputType="textPersonName"
+                    android:text="Tgl Terima" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:textSize="14dp"
+                    android:background="#FFFF00"
+                    android:textAlignment="center"
+                    android:inputType="textPersonName"
+                    android:text="Status" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

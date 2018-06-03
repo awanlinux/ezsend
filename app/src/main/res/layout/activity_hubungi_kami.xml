@@ -1,137 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginHorizontal="25dp"
+    android:orientation="vertical"
     tools:context="com.ppl.ezsend.hubungi_kami">
 
-
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="23dp"
-        android:layout_marginEnd="18dp"
-        android:text="kirim "
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="447dp" />
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Hubungi Kami"
+            android:layout_gravity="center_horizontal"
+            android:textSize="24sp" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        android:text="Hubungi Kami"
-        android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView6"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="33dp"
-        android:text="Nama"
-        android:textSize="18dp" />
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:text="Nama"
+            android:textSize="18dp" />
 
-    <EditText
-        android:id="@+id/editText7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView7"
-        android:layout_alignBottom="@+id/textView7"
-        android:layout_alignEnd="@+id/button2"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView7"
-        android:layout_below="@+id/editText7"
-        android:layout_marginTop="17dp"
-        android:text="Telepon"
-        android:textSize="18sp" />
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:text="Telepon"
+            android:textSize="18dp" />
 
-    <EditText
-        android:id="@+id/editText8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editText7"
-        android:layout_alignTop="@+id/textView8"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editText9"
-        android:layout_alignBottom="@+id/editText9"
-        android:layout_alignEnd="@+id/textView8"
-        android:text="Alamat"
-        android:textSize="18sp" />
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:text="Alamat"
+            android:textSize="18dp" />
 
-    <EditText
-        android:id="@+id/editText9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editText8"
-        android:layout_below="@+id/editText8"
-        android:layout_marginTop="11dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView9"
-        android:layout_below="@+id/editText9"
-        android:layout_marginTop="21dp"
-        android:text="Email"
-        android:textSize="18dp" />
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:text="Email"
+            android:textSize="18dp" />
 
-    <EditText
-        android:id="@+id/editText10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView10"
-        android:layout_alignBottom="@+id/textView10"
-        android:layout_alignStart="@+id/editText9"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText10"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="13dp"
-        android:text="Silahkan masukan komentar anda disini"
-        android:textSize="18sp" />
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:text="Komentar"
+                android:layout_gravity="top"
+                android:textSize="18dp" />
+        </LinearLayout>
 
-    <EditText
-        android:id="@+id/editText11"
-        android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:inputType="textImeMultiLine"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView11"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="19dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="" />
-</RelativeLayout>
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kirim "
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
