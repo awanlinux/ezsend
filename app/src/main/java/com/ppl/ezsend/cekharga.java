@@ -1,83 +1,172 @@
 package com.ppl.ezsend;
 
+import android.app.DatePickerDialog;
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.widget.Button;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.IOException;
+import com.ppl.ezsend.ongkir.CounterActivity;
+import com.ppl.ezsend.ongkir.ProvinceActivity;
 
-import okhttp3.MediaType;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
+import java.util.Calendar;
 
 public class cekharga extends AppCompatActivity {
 
-    public cekharga() throws IOException {
-    }
+    String province,city_id, city, gender , bornday, address , name, telp;
+    final static String TAG = cekharga.class.getSimpleName();
+    TextView etCity , etProvince , etBornDay;
+    EditText etName , etNoTelp , etAddress ;
+    private RadioGroup radioGroup;
+    RadioButton radioButton1, radioButton2;
+    private int mYear, mMonth, mDay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cekharga);
-        this.setTitle( "Cek Harga");
+
+        etAddress = findViewById(R.id.etAddress);
+        etName = findViewById(R.id.etName);
+        etNoTelp = findViewById(R.id.etNotelp);
+        etCity = findViewById(R.id.etCity);
+        etProvince = findViewById(R.id.etProvince);
+        radioGroup = findViewById(R.id.radioGroup);
+        etBornDay = findViewById(R.id.etBornDay);
+        radioButton1 = findViewById(R.id.radioButton1);
+        radioButton2 = findViewById(R.id.radioButton2);
+
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                RadioButton radioButton = radioGroup.findViewById(i);
+                if (null != radioButton && i > -1){
+                    gender = String.valueOf(radioButton.getText());
+                    Log.d(TAG , "kelaminnya adalah : " + gender);
+                }
+            }
+        });
+
+        checkKeyboard();
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            name = extras.getString("name");
+            bornday = extras.getString("bornday");
+            address = extras.getString("address");
+            gender = extras.getString("gender");
+            province = extras.getString("province");
+            city_id = extras.getString("city_id");
+            city = extras.getString("city");
+            telp = extras.getString("telp");
+            Log.d(TAG, "provinsi : " + province + "\ncity id : " + city_id + "\ncity name : " + city);
+
+            etCity.setText(city);
+            etProvince.setText(province);
+            etName.setText(name);
+            etAddress.setText(address);
+            etBornDay.setText(bornday);
+            etNoTelp.setText(telp);
+
+
+            Log.d(TAG , gender);
+            if (gender.equals("perempuan")){
+                radioButton2.setChecked(true);
+            }else{
+                radioButton1.setChecked(true);
+            }
+
+        }
+
+
     }
 
-    public void provinsi() throws IOException {
-        OkHttpClient client = new OkHttpClient();
+    public void getCalendar(View view){
+        // Get Current Date
+        final Calendar c = Calendar.getInstance();
+        mYear = c.get(Calendar.YEAR);
+        mMonth = c.get(Calendar.MONTH);
+        mDay = c.get(Calendar.DAY_OF_MONTH);
 
-        Request request = new Request.Builder()
-                .url("https://api.rajaongkir.com/starter/province?id=12")
-                .get()
-                .addHeader("key", "74a00001992d619fc47c81af9b2dd454")
-                .build();
 
-        Response response = client.newCall(request).execute();
+        DatePickerDialog datePickerDialog = new DatePickerDialog(this,
+                new DatePickerDialog.OnDateSetListener() {
+
+                    @Override
+                    public void onDateSet(DatePicker view, int year,
+                                          int monthOfYear, int dayOfMonth) {
+
+                        Log.d(TAG , dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
+                        bornday = dayOfMonth + "-" + (monthOfYear + 1) + "-" + year;
+                        etBornDay.setText(bornday);
+
+                    }
+                }, mYear, mMonth, mDay);
+        datePickerDialog.show();
     }
 
-    public void city() throws IOException {
-        OkHttpClient client = new OkHttpClient();
-
-        Request request = new Request.Builder()
-                .url("https://api.rajaongkir.com/starter/city?id=39&province=5")
-                .get()
-                .addHeader("key", "74a00001992d619fc47c81af9b2dd454")
-                .build();
-
-        Response response = client.newCall(request).execute();
+    private void checkKeyboard(){
+        View view = this.getCurrentFocus();
+        if (view != null) {
+            InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
     }
 
-    public void cost() throws IOException {
-        OkHttpClient client = new OkHttpClient();
+    public void listProvince(View view){
 
-        MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
-        RequestBody body = RequestBody.create(mediaType, "origin=501&destination=114&weight=1700&courier=jne");
-        Request request = new Request.Builder()
-                .url("https://api.rajaongkir.com/starter/cost")
-                .post(body)
-                .addHeader("key", "74a00001992d619fc47c81af9b2dd454")
-                .addHeader("content-type", "application/x-www-form-urlencoded")
-                .build();
+        name = etName.getText().toString();
+        address = etAddress.getText().toString();
+        telp = etNoTelp.getText().toString();
 
-        Response response = client.newCall(request).execute();
-    }
+        if (gender != null && bornday != null && name != null && address != null && telp != null){
+            Intent i = new Intent(getApplicationContext(), ProvinceActivity.class);
+            i.putExtra("name", name);
+            i.putExtra("address", address);
+            i.putExtra("telp", telp);
+            i.putExtra("gender", gender);
+            i.putExtra("bornday", bornday);
+            Log.d(TAG , "di validasi : " + gender);
+            startActivity(i);
+        }else{
+            Toast.makeText(getApplicationContext(), "You must fill all before this",
+                    Toast.LENGTH_SHORT).show();
+        }
 
 
-
-    public void toastMsg(String msg) {
-
-        Toast toast = Toast.makeText(this, msg, Toast.LENGTH_LONG);
-        toast.show();
 
     }
 
-    public void displayToastMsg(View v) {
+    public void nextCounter(View view){
+        name = etName.getText().toString();
+        address = etAddress.getText().toString();
+        telp = etNoTelp.getText().toString();
 
-        toastMsg(" Kurir : JNE, Kota : Jakarta Utara, Berat : 1 Kilo, Harga Rp 20000");
-
+        if (gender != null && bornday != null && name != null && address != null && telp != null && city_id != null && city != null && province != null){
+            Intent i = new Intent(getApplicationContext(), CounterActivity.class);
+            i.putExtra("city", city);
+            i.putExtra("city_id", city_id);
+            i.putExtra("province", province);
+            i.putExtra("name", name);
+            i.putExtra("address", address);
+            i.putExtra("telp", telp);
+            i.putExtra("gender", gender);
+            i.putExtra("bornday", bornday);
+            Log.d(TAG , "di validasi : " + gender);
+            startActivity(i);
+        }else{
+            Toast.makeText(getApplicationContext(), "You must fill all before this",
+                    Toast.LENGTH_SHORT).show();
+        }
     }
 
 
