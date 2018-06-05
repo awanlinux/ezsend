@@ -74,6 +74,9 @@
         <activity
             android:name=".drop"
             android:label="@string/title_activity_drop"></activity>
+
+        <activity android:name=".activity.CostActivity" />
+        <activity android:name=".activity.cekharga"></activity>
     </application>
 
 </manifest>
